@@ -142,7 +142,6 @@ input::placeholder{
 }
 .right-box h1:hover {
     color: var(--sec-color);
-    font-weight: 800;
 }
 
 .right-box h2 {
