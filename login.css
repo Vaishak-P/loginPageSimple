@@ -60,7 +60,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
-    background:var( --bg-color);
+    background:var( --bg-color); 
 }
 input{
     background:var( --bg-color);
@@ -119,9 +119,18 @@ input::placeholder{
     text-transform: uppercase;
     transition: color 0.5s;
 }
+.signbtn a {
+    color: var(--bg-color);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.signbtn a:hover{
+    color: var(--sec-color);
+    width: max-content;
+}
 .left-box button:hover{
     border: var(--sec-color) 2px solid;
-    color:var(--bg-color) ;
 }
 /* -------- RIGHT BOX-------- */
 .right-box {
@@ -170,4 +179,72 @@ input::placeholder{
     border: var(--sec-color) 2px solid;
     background-color: var(--bg-color);
     color: var(--pri-color);
+}
+
+/* -----------RESPONSIVE----------------- */
+@media (max-width:412px){
+    .form-box{
+        width: 90%;
+        height: 700px;
+        display: block;
+    }
+    /* --------LEFT BOX -------- */
+    .left-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        height: 250px;
+        width: 80%;
+    }
+    /* -------- RIGHT BOX-------- */
+    .right-box {
+        margin: 50px 0;
+    }
+    .right-box h2 {
+        font-size: 16px;
+    }
+    .registerContainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-0%);
+        margin-top: 10%;
+    }
+
+}
+@media (max-width:700px) {
+    .form-box {
+        width: 90%;
+        height: 90%;
+        display: block;
+    }
+
+    /* --------LEFT BOX -------- */
+    .left-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 250px;
+        width: 80%;
+    }
+
+    /* -------- RIGHT BOX-------- */
+    .right-box {
+        margin: 20px 0;
+    }
+
+    .right-box h2 {
+        font-size: 16px;
+    }
+
+    .registerContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+        margin-top: 20px;
+    }
+
 }
